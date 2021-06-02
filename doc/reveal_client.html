@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>reveal.jsによるオンラインプレゼンテーション</title>
+<meta name="author" content="竹ノ下祐二"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="../reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="../reveal.js/dist/theme/white-mod.css" id="theme"/>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide">
+<h1>reveal.jsによるオンラインプレゼンテーション</h1><h2>org-re-revealを用いて</h2><p>竹ノ下祐二<br />現実逃避行動 (2021/05/08)</p>
+</section>
+<section id="table-of-contents-section">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#/slide-org834e3a2">見出しと個条書き</a></li>
+<li><a href="#/slide-orgcb5dfa7">表の挿入</a></li>
+<li><a href="#/slide-orge295a99">図の挿入</a></li>
+<li><a href="#/slide-org5800a8a">動画の挿入</a></li>
+<li><a href="#/slide-orge47bf53">インラインフレームの挿入</a></li>
+</ul>
+</div>
+</div>
+</section>
+
+<section>
+<section id="slide-org834e3a2">
+<h2 id="org834e3a2">見出しと個条書き</h2>
+<ol>
+<li>番号なしの箇条書き</li>
+<li>番号付き箇条書き</li>
+<li>定義リスト</li>
+<li>長い文章</li>
+
+</ol>
+
+<aside class="notes">
+<p>
+このセクションでは、まず番号のない箇条書き、次に、番号の振られた箇条書きを試します。そして、定義リストや長い文章がどのように表示されるか確認します。
+</p>
+
+</aside>
+
+
+</section>
+<section id="slide-org18d96b5">
+<h3 id="org18d96b5">番号なし個条書き</h3>
+<ul>
+<li>個条書き項目
+<ul>
+<li>このなかに <b>強調表示</b> を入れてみる</li>
+
+</ul></li>
+<li>リンクテキストの表示
+<ul>
+<li><a href="https://www.yujitakenoshita.org/">リンクテキスト</a> (クリックでプレビュー表示)</li>
+
+</ul></li>
+
+</ul>
+
+
+</section>
+<section id="slide-org7b23972">
+<h3 id="org7b23972">番号つき個条書きと番号なし</h3>
+<ol>
+<li>個条書き項目
+<ul>
+<li>こっちは番号なし</li>
+
+</ul></li>
+
+</ol>
+
+
+</section>
+<section id="slide-org215f285">
+<h3 id="org215f285">番号なし個条書きと番号あり</h3>
+<ul>
+<li>番号なしと
+<ol>
+<li>番号あり</li>
+
+</ol></li>
+
+</ul>
+
+
+</section>
+<section id="slide-org6d0b76a">
+<h3 id="org6d0b76a">定義リスト</h3>
+<dl>
+<dt>項目</dt><dd>ここに説明をいろいろ記述します。</dd>
+<dt>項目2</dt><dd>さらに説明をいろいと記述します。</dd>
+
+</dl>
+
+
+</section>
+<section id="slide-org0aaa119">
+<h3 id="org0aaa119">長い文章</h3>
+<p>
+親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二
+階から飛び降りて一週間ほど腰を抜かした事がある。なぜそんな無闇をしたと
+聞く人があるかも知れぬ。別段深い理由でもない。新築の二階から首を出して
+いたら、同級生の一人が冗談に、いくら威張っても、そこから飛び降りる事は
+出来まい。弱虫やーい。と囃したからである。小使いに負ぶさって帰って来た
+時、おやじが大きな眼めをして二階ぐらいから飛び降りて腰を抜かす奴がある
+かと云ったから、この次は抜かさずに飛んで見せますと答えた。
+</p>
+
+
+</section>
+</section>
+<section>
+<section id="slide-orgcb5dfa7">
+<h2 id="orgcb5dfa7">表の挿入</h2>
+<div class="outline-text-2" id="text-orgcb5dfa7">
+</div>
+</section>
+<section id="slide-org6bc36fc">
+<h3 id="org6bc36fc">スライド見出し</h3>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">項目行</th>
+<th scope="col" class="org-left">属性1</th>
+<th scope="col" class="org-left">属性2</th>
+<th scope="col" class="org-left">属性3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">項目1</td>
+<td class="org-left">値1.1</td>
+<td class="org-left">値1.2</td>
+<td class="org-left">値1.3</td>
+</tr>
+
+<tr>
+<td class="org-left">項目2</td>
+<td class="org-left">値2.1</td>
+<td class="org-left">値2.2</td>
+<td class="org-left">値2.3</td>
+</tr>
+
+<tr>
+<td class="org-left">項目3</td>
+<td class="org-left">値3.1</td>
+<td class="org-left">値3.2</td>
+<td class="org-left">値3.3</td>
+</tr>
+</tbody>
+</table>
+
+
+</section>
+</section>
+<section>
+<section id="slide-orge295a99">
+<h2 id="orge295a99">図の挿入</h2>
+<div class="outline-text-2" id="text-orge295a99">
+</div>
+</section>
+<section id="slide-org3f79648">
+<h3 id="org3f79648">ウェブ上の画像</h3>
+<img class="r-stretch" src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Botticelli_Primavera.jpg">
+
+
+</section>
+<section id="slide-orgb0b1658">
+<h3 id="orgb0b1658">Dropboxの共有画像</h3>
+<img class="r-stretch" src="https://dl.dropboxusercontent.com/s/fn0qqxlai0tn59b/2015-01-01%2011.13.27.jpg">
+<p style="font-size:12px; color:gray; margin:0;">（写真の出典）</p>
+
+</section>
+<section id="slide-org4e1e40e">
+<h3 id="org4e1e40e">Google Driveの共有画像</h3>
+<iframe src="https://drive.google.com/file/d/1Dcq7wSaJ8wjLwqdHwAZMhn8ei_8zPDjT/preview" width="640" height="480"></iframe>
+
+
+</section>
+</section>
+<section>
+<section id="slide-org5800a8a">
+<h2 id="org5800a8a">動画の挿入</h2>
+<div class="outline-text-2" id="text-org5800a8a">
+</div>
+</section>
+<section id="slide-org2bc49da">
+<h3 id="org2bc49da">ウェブ上の動画</h3>
+<video controls class="stretch" data-autoplay src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"></video>
+
+</section>
+<section id="slide-org75ecfdb">
+<h3 id="org75ecfdb">Dropboxの共有動画</h3>
+<video controls class="stretch" data-autoplay src="https://dl.dropboxusercontent.com/s/7cv4lkme2dpaua4/higashiyama1.mp4"></video>
+
+
+</section>
+</section>
+<section>
+<section id="slide-orge47bf53">
+<h2 id="orge47bf53">インラインフレームの挿入</h2>
+<div class="outline-text-2" id="text-orge47bf53">
+</div>
+</section>
+<section id="slide-org4f489e0">
+<h3 id="org4f489e0">ウェブページ</h3>
+<iframe class="r-stretch" data-src="http://www.chubu-gu.ac.jp" ></iframe>
+
+</section>
+<section id="slide-org5cf0d40">
+<h3 id="org5cf0d40">Youtube</h3>
+<iframe class="r-stretch" src="https://www.youtube.com/embed/zPXz73t0h-U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</section>
+<section id="slide-org5e371e5">
+<h3 id="org5e371e5">Googleマップ</h3>
+<iframe class="r-stretch" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3251.642241091288!2d136.88606295166318!3d35.41411735208387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600308a12d27713d%3A0x91e5a16a840da530!2z5ZCE5YuZ5rK55bGL!5e0!3m2!1sja!2sjp!4v1594705648618!5m2!1sja!2sjp" allowfullscreen=""></iframe>
+</section>
+</section>
+</div>
+</div>
+<script src="../reveal.js/dist/reveal.js"></script>
+<script src="../reveal.js/plugin/markdown/markdown.js"></script>
+<script src="../reveal.js/plugin/notes/notes.js"></script>
+<script src="../reveal.js/plugin/search/search.js"></script>
+<script src="../reveal.js/plugin/zoom/zoom.js"></script>
+<script src="../reveal.js/plugin/menu/menu.js"></script>
+<script src="../reveal.js/plugin/chalkboard/plugin.js"></script>
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: false,
+slideNumber: 'c/t',
+rollingLinks: false,
+keyboard: true,
+mouseWheel: false,
+fragmentInURL: false,
+hashOneBasedIndex: false,
+pdfSeparateFragments: true,
+
+overview: true,
+width: 1280,
+height: 800,
+
+transition: 'convex',
+transitionSpeed: 'default',
+multiplex: {
+    secret: null, // null if client
+    id: 'f4377f6f85d50dba', // id, obtained from socket.io server
+    url: 'https://reveal-multiplex.glitch.me/' // Location of socket.io server
+},
+
+// Plugins with reveal.js 4.x
+plugins: [ RevealMarkdown, RevealNotes, RevealSearch, RevealZoom, RevealMenu, RevealChalkboard,  ],
+
+// Optional libraries used to extend reveal.js
+dependencies: [
+{src: '../reveal.js/plugin/coursemod/coursemod.js', async: true},
+ { src: 'https://reveal-multiplex.glitch.me/socket.io/socket.io.js', async: true },
+ { src: 'https://reveal-multiplex.glitch.me/client.js', async: true }]
+
+,coursemod: {enabled: true, shown:false}, chalkboard:{toggleChalkboardButton: { left: '80px' }, toggleNotesButton: { left: '130px'}},});
+</script>
+</body>
+</html>
